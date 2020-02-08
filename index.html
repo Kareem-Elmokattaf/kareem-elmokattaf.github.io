@@ -15,6 +15,9 @@
     <!-- Import font awesome -->
     <script src="https://kit.fontawesome.com/d245b2d381.js" crossorigin="anonymous"></script>
     <title  >Student's Personal Website</title>
+    
+    <!--Styles-->
+    <!--For the  nav bar -->
     <style>
         .icon{
             color: black;
@@ -36,10 +39,58 @@
         }
     </style>
     
+    
+    <!-- For the flip  cards-->
+    <style>
+    .flip-card {
+      background-color: transparent;
+      width: 250px;
+      height: 200px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+    }
+
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #2b7fd7;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: #2b7fd7;
+      color: black;
+      transform: rotateY(180deg);
+    }
+    </style>
+    
 </head>
 
+<!--Body for  the page -->
 <body>
-    <nav style="background-color:#F4D03F" class="navbar navbar-expand-lg navbar-light " >
+    
+    <nav style="background-color:#00cc66" class="navbar navbar-expand-lg navbar-light " >
       <a class="navbar-brand" href="#">Home</a>
       <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,33 +126,49 @@
           <a class="dropdown-item" href="https://mail.google.com/mail/u/0/#inbox?compose=new">Contact</a>
         </div>
         
-      
-
     </nav>
     </div>
-
-    <div class="container has-text-centered section">
-    <div >
-            <!-- Content goes here -->
-    <h2 class="title has-text-black" >
-            Welcome to Kareem's website</h2>
-        </div>
     
-    <h6 class="subtitle has-text-black">I am a second year mechatronics engineering student at McMaster University. Currently on a search for a Co-op Position starting in May 2020. I am very passionate about programming and math. I am  continuing to develop my skills in programming by either learning programming labguages or developing new skills for programming languages I am already proficient in.</h6>
-        <h6 class="subtitle has-text-black">This is my webpage that I am currently working on improving. There is going to be a lot of work on this webpage which I am very excited to share with you. This webpage will continue to improve as I continue to learn HTML to make this webpage more appropriate and better.
-        </h6>
-          </div>
+
+    <!-- Content of the page-->
+    <!-- Title-->
+    <div class="container has-text-centered section">
+    <div>
+    <h1 class="title has-text-black" >Welcome to Kareem's website</h1>
+    <p></p>
+    </div>
+    
+    <!--Content -->
+    <h5 class="subtitle has-text-black">I am a second year mechatronics engineering student at McMaster University. Currently on a search for a Co-op Position starting in May 2020. I am very passionate about programming and math. Continuing to develop my skills in programming has helped improve my problem-solving skills as well as improve my abilithy to work around issues as  they occur not  only while programming but also in real life.</h5>
+        <h5 class="subtitle has-text-black">This is my webpage that I am currently working on improving. There is going to be a lot of work on this webpage which I am very excited to share with you. This webpage will continue to improve as I continue to learn HTML to make this webpage more appropriate and better.</h5>
+        <p></p>
+        <p></p>
+        <p></p>
+        </div>
         </div>
     </div>
+    <!--Skills Section-->
     <div class="section" id="section-skills">
       <div class="container">
         <h4 class="title is-size-3">Skills</h4>
         <h6 class="subtitle has-text-grey is-size-4">My personal skill set.</h6>
         <div class="columns scroll-animations">
-          <div data-include="public/html_extra/skillCards.html"></div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <h1>C</h1>
+                </div>
+                <div class="flip-card-back">
+                  <p>First programming language I learnt</p>
+                  <p>Very interesting</p>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
+    
+    <br></br>
 
     <address style = "margin-left: 30px">
     Written by <a>Kareem Elmokattaf</a>.<br>
