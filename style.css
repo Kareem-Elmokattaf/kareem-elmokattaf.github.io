@@ -1,4 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-.main{
-    padding-left;
+
+body,html{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
 }
+
+.card {
+    width: 275px;
+    box-shadow: 0 10px 13px 0 rgba(0,0,0,0.2);
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 15px 27px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.b1{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	top: 0;
+    background: url(backgroundforweb.jpg);
+	display: table;
+	background-size:cover;
+}
+
+.b1 .in1{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.content{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.content h1{
+  font-family: 'Century Gothic',sans-serif;
+  color: #f9f3f4;
+  font-size: 500%;
+  text-shadow: 0 0 300px #000;
+}
+.content .btn{
+  border-radius: 9px;
+  color: #f9f3f4;
+  text-decoration: none;
+  font-family: 'Century Gothic',sans-serif;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight: bold;
+}
+.content .btn:hover{
+  color: #2196f3;
+}
+
+
+
