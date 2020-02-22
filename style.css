@@ -10,6 +10,7 @@ body,html{
 
 .card {
     width: 275px;
+    height: 445px;
     box-shadow: 0 10px 13px 0 rgba(0,0,0,0.2);
     transition: 0.4s;
     border-radius: 5px;
@@ -27,11 +28,11 @@ body,html{
 	height: 100%;
 	margin: auto;
 	top: 0;
-    	background: url(https://kareem-elmokattaf.github.io/images/background.jpg);
-	background-attachment: fixed;
-  	background-position: center;
-	background-repeat: no-repeat;
-  	background-size: cover;
+    background: url(https://kareem-elmokattaf.github.io/images/backgroundcrop.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	display: table;
 	background-size:cover;
 }
