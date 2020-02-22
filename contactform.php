@@ -11,6 +11,6 @@
         
         mail($mailTo,$subject,$txt,$headers);
         
-        header("Location: index.html?mailsend");
+        header("Location: contactform.php?mailsend");
     }
 ?>
