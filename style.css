@@ -10,7 +10,7 @@ body,html{
 
 .card {
     width: 275px;
-    height: 445px;
+    height: 465px;
     box-shadow: 0 10px 13px 0 rgba(0,0,0,0.2);
     transition: 0.4s;
     border-radius: 5px;
