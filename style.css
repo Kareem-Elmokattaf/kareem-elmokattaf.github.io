@@ -15,6 +15,7 @@ body,html{
     border-radius: 5px;
      text-align: justify;
   text-justify: inter-word;
+	padding:2px;
 }
 
 .card:hover {
